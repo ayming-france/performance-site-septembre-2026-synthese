@@ -886,6 +886,8 @@
     .att-n svg { width:20px; height:20px; color:var(--blue-accent); }
     .att-n b { font-size:44px; font-weight:800; color:var(--blue-accent); }
     .att-n span { grid-column:1 / -1; font-size:14px; opacity:.9; }
+    .att-n em { grid-column:1; font-style:normal; font-size:11px; font-weight:700; letter-spacing:.4px; text-transform:uppercase; white-space:nowrap; color:var(--ay-light); margin-top:-8px; }
+    .att-n em.now { grid-column:3; color:var(--blue-accent); }
     .att-l { display:flex; flex-direction:column; gap:9px; }
     .att-l span { display:flex; gap:8px; align-items:flex-start; font-size:14.5px; color:var(--ay-dark); }
     .att-l svg { width:18px; height:18px; color:var(--kpi-up-text); flex:none; margin-top:1px; }
@@ -1420,7 +1422,7 @@
           <div class="fl hot ay-in" style="--d:1.8s"><i data-lucide="star"></i><b>Salesforce</b><span>le lead sait d'où il vient</span></div>
         </div>
         <div class="att">
-          <div class="att-n ay-pop" style="--d:2.2s"><s>0&nbsp;%</s><i data-lucide="arrow-right"></i><b>89,7&nbsp;%</b><span>des demandes arrivent avec une vraie source, au lancement du nouveau site puis aujourd'hui</span></div>
+          <div class="att-n ay-pop" style="--d:2.2s"><s>0&nbsp;%</s><i data-lucide="arrow-right"></i><b>89,7&nbsp;%</b><em>Lancement du site</em><em class="now">Aujourd'hui</em><span>des demandes arrivent avec leur source. La migration du site l'avait coupée.</span></div>
           <div class="att-l">
             <span class="ay-row" style="--d:2.5s"><i data-lucide="check"></i>Clics publicitaires gardés après acceptation des cookies, depuis le 17 octobre</span>
             <span class="ay-row" style="--d:2.7s"><i data-lucide="check"></i>Coordonnées proposées au visiteur qui revient, depuis le 12 octobre</span>
