@@ -192,6 +192,9 @@
       z-index: 90; white-space: nowrap;
       pointer-events: none;
     }
+    /* Author credit in the engine banner, right-aligned before the page counter. */
+    .banner-credit { margin-left: auto; margin-right: 28px; font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.92); letter-spacing: 0.3px; white-space: nowrap; }
+    .banner-credit + .banner-controls { margin-left: 0; }
     .cover-credit {
       margin-top: 20px; font-size: 12px; font-weight: 700;
       color: #fff; letter-spacing: 0.3px; opacity: 0.9;
@@ -1651,14 +1654,18 @@
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script>lucide.createIcons();</script>
   <script>
-    // Author credit (anti-plagiarism), appended to the engine's footer banner once it exists
+    // Author credit (anti-plagiarism), placed in the engine's footer banner before the page counter once the banner exists
     (function () {
-      var credit = ' · José J Encarnación Saiter | Marketing France · 18 octobre 2026';
       var tries = 0;
       var add = function () {
-        var banner = document.querySelector('.banner-confidential');
-        if (banner) {
-          if (banner.textContent.indexOf('Encarnación') === -1) banner.textContent += credit;
+        var controls = document.querySelector('.banner-controls');
+        if (controls) {
+          if (!document.querySelector('.banner-credit')) {
+            var credit = document.createElement('div');
+            credit.className = 'banner-credit';
+            credit.textContent = 'José J Encarnación Saiter';
+            controls.parentNode.insertBefore(credit, controls);
+          }
           return;
         }
         if (++tries < 50) setTimeout(add, 100);
