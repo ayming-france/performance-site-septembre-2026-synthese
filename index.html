@@ -1647,26 +1647,23 @@
     <span><span class="key" id="key-fullscreen">F</span> Plein écran</span>
   </div>
 
-  <!-- Author credit (anti-plagiarism) -->
-  <div class="deck-credit">José J Encarnación Saiter | Marketing France · 18 octobre 2026</div>
-
   <script src="https://ayming-france.github.io/assets/engine/slides.js"></script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script>lucide.createIcons();</script>
   <script>
-    // Hide the global grey credit while a dark cover or divider slide is active
+    // Author credit (anti-plagiarism), appended to the engine's footer banner once it exists
     (function () {
-      var covers = document.querySelectorAll('.slide.cover');
-      var credit = document.querySelector('.deck-credit');
-      if (!covers.length || !credit) return;
-      var sync = function () {
-        var onCover = Array.prototype.some.call(covers, function (c) { return c.classList.contains('active'); });
-        credit.style.visibility = onCover ? 'hidden' : 'visible';
+      var credit = ' · José J Encarnación Saiter | Marketing France · 18 octobre 2026';
+      var tries = 0;
+      var add = function () {
+        var banner = document.querySelector('.banner-confidential');
+        if (banner) {
+          if (banner.textContent.indexOf('Encarnación') === -1) banner.textContent += credit;
+          return;
+        }
+        if (++tries < 50) setTimeout(add, 100);
       };
-      sync();
-      covers.forEach(function (c) {
-        new MutationObserver(sync).observe(c, { attributes: true, attributeFilter: ['class'] });
-      });
+      add();
     })();
   </script>
 
