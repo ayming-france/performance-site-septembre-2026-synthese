@@ -193,7 +193,8 @@
       pointer-events: none;
     }
     /* Author credit in the engine banner, right-aligned before the page counter. */
-    .banner-credit { margin-left: auto; margin-right: 28px; font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.92); letter-spacing: 0.3px; white-space: nowrap; }
+    .banner-credit { margin-left: auto; margin-right: 28px; font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.92); letter-spacing: 0.3px; white-space: nowrap; text-decoration: none; }
+    .banner-credit:hover { text-decoration: underline; color: #fff; }
     .banner-credit + .banner-controls { margin-left: 0; }
     .cover-credit {
       margin-top: 20px; font-size: 12px; font-weight: 700;
@@ -1661,9 +1662,10 @@
         var controls = document.querySelector('.banner-controls');
         if (controls) {
           if (!document.querySelector('.banner-credit')) {
-            var credit = document.createElement('div');
+            var credit = document.createElement('a');
             credit.className = 'banner-credit';
-            credit.textContent = 'José J Encarnación Saiter';
+            credit.href = 'mailto:jencarnacion@ayming.com';
+            credit.textContent = (document.documentElement.lang === 'en' ? 'By ' : 'Par ') + 'José J Encarnación Saiter';
             controls.parentNode.insertBefore(credit, controls);
           }
           return;
