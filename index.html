@@ -774,6 +774,9 @@
     .po.s { margin-left:8px; width:160px; }
     .po.up { border-color:var(--tint-green-wash-1); background:var(--kpi-up-soft); }
     .po.up b { color:var(--kpi-up-text); }
+    .po.bad { border-color:var(--kpi-down); }
+    .po.bad b { color:var(--kpi-down); }
+    .tlc .vl.bad { border-color:var(--kpi-down); }
 
     /* what shifted in the clicks */
     .shf { display:grid; grid-template-columns:1fr 1fr; gap:24px; max-width:980px; margin:4px auto 0; text-align:left; }
@@ -1011,6 +1014,7 @@
 
     /* visibility recovering */
     .vr { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; max-width:1080px; margin:6px auto 0; text-align:left; }
+    .vr.two { grid-template-columns:repeat(2,1fr); max-width:780px; }
     .vr-c { background:var(--bg-white); border:1px solid var(--tint-grey-10); border-radius:16px; padding:16px 18px; display:flex; flex-direction:column; gap:8px; }
     .vr-c.hot { border-color:var(--ay-primary); box-shadow:0 0 0 4px rgba(17,169,230,.10); }
     .vr-c.next { background:var(--ay-bg-light); }
@@ -1044,7 +1048,7 @@
       <div class="nav-item" data-slide="5"><span class="nav-item-number">06</span>Taux de conversion par canal</div>
       <div class="nav-item" data-slide="6"><span class="nav-item-number">07</span>Chapitre 2 · SEO, un an après le nouveau site</div>
       <div class="nav-item" data-slide="7"><span class="nav-item-number">08</span>Les clics mois par mois</div>
-      <div class="nav-item" data-slide="8"><span class="nav-item-number">09</span>La visibilité remonte</div>
+      <div class="nav-item" data-slide="8"><span class="nav-item-number">09</span>Mieux placés, plus cliqués</div>
       <div class="nav-item" data-slide="9"><span class="nav-item-number">10</span>Les erreurs 404</div>
       <div class="nav-item" data-slide="10"><span class="nav-item-number">11</span>Ce que la refonte a retiré</div>
       <div class="nav-item" data-slide="11"><span class="nav-item-number">12</span>Ce qui a changé dans les clics</div>
@@ -1150,38 +1154,39 @@
           <p class="chap-k ay-in" style="--d:.2s">Chapitre 2</p>
           <h1 class="ay-in" style="--d:.3s">SEO, un an après le nouveau site</h1>
           <p class="chap-s ay-in" style="--d:.4s">La refonte, ce qu'on a corrigé depuis, et ce que ça rapporte</p>
-          <ul><li class="ay-row" style="--d:0.50s">Les clics, mois par mois</li><li class="ay-row" style="--d:0.62s">La visibilité remonte</li><li class="ay-row" style="--d:0.74s">Les erreurs 404</li><li class="ay-row" style="--d:0.86s">Ce que la refonte a retiré</li><li class="ay-row" style="--d:0.98s">Ce qui a changé dans les clics</li><li class="ay-row" style="--d:1.10s">Une expérience sur les titres Google</li></ul>
+          <ul><li class="ay-row" style="--d:0.50s">Les clics, mois par mois</li><li class="ay-row" style="--d:0.62s">Mieux placés, plus cliqués</li><li class="ay-row" style="--d:0.74s">Les erreurs 404</li><li class="ay-row" style="--d:0.86s">Ce que la refonte a retiré</li><li class="ay-row" style="--d:0.98s">Ce qui a changé dans les clics</li><li class="ay-row" style="--d:1.10s">Une expérience sur les titres Google</li></ul>
         </div>
       </div>
     </section>
 
     <section data-name="Les clics mois par mois" class="slide airy" data-chapter="seo">
       <div class="slide-inner insights">
-        <div class="slide-eyebrow">SEO · Janvier 2025 à septembre 2026</div>
-        <h1 class="slide-title compact">Les clics remontent à chaque vague de corrections</h1>
+        <div class="slide-eyebrow">SEO · Juillet 2025 à septembre 2026</div>
+        <h1 class="slide-title compact">La refonte a fait chuter Google, voici ce qu'on a réparé depuis</h1>
         <div class="tlc">
-          <div class="po r1 e ay-pop" style="left:50.46%;--d:.5s"><b>7 novembre 2025</b>Nouveau site, des pages retirées, d'autres redirigées</div>
-          <div class="po r2 e ay-pop" style="left:64.1%;--d:.9s"><b>Janvier et février 2026</b>74 redirections ajoutées, liens cassés de 30 à 0</div>
-          <div class="po r3 s wide ay-pop" style="left:68.63%;--d:1.3s"><b>Mars 2026</b>158 images décrites, 238 liens vers la préproduction corrigés, 226 liens internes remis à jour, 42 pages de texte factice nettoyées</div>
-          <div class="po r1 e ay-pop" style="left:95.88%;--d:2.2s"><b>17 au 29 septembre</b>6 redirections, 28 titres réécrits, 59 images, suivi SEO chaque semaine</div>
-          <div class="tlc-ch"><svg viewBox="0 0 1080 300" preserveAspectRatio="none"><path d="M54.5,118 L54.5,26.4 L103.6,32.9 L152.6,30.3 L201.7,33.9 L250.7,26.0 L299.8,32.3 L348.8,38.7 L397.9,51.3 L446.9,61.6 L496.0,68.8 L545.0,72.8 L594.0,94.2 L643.1,92.6 L692.1,96.5 L741.2,97.3 L790.2,85.9 L839.3,88.1 L888.3,86.9 L937.4,91.8 L986.4,94.2 L1035.5,83.8 L1035.5,118 Z" class="imp-a"/><polyline points="54.5,26.4 103.6,32.9 152.6,30.3 201.7,33.9 250.7,26.0 299.8,32.3 348.8,38.7 397.9,51.3 446.9,61.6 496.0,68.8 545.0,72.8 594.0,94.2 643.1,92.6 692.1,96.5 741.2,97.3 790.2,85.9 839.3,88.1 888.3,86.9 937.4,91.8 986.4,94.2 1035.5,83.8" class="imp-l"/><rect x="40.3" y="148.0" width="28.4" height="140.0" rx="2" class="bar"/><rect x="89.3" y="156.6" width="28.4" height="131.4" rx="2" class="bar"/><rect x="138.4" y="163.0" width="28.4" height="125.0" rx="2" class="bar"/><rect x="187.4" y="170.3" width="28.4" height="117.7" rx="2" class="bar"/><rect x="236.5" y="178.5" width="28.4" height="109.5" rx="2" class="bar"/><rect x="285.5" y="193.1" width="28.4" height="94.9" rx="2" class="bar"/><rect x="334.6" y="200.3" width="28.4" height="87.7" rx="2" class="bar"/><rect x="383.6" y="242.6" width="28.4" height="45.4" rx="2" class="bar"/><rect x="432.7" y="211.9" width="28.4" height="76.1" rx="2" class="bar hi"/><rect x="481.7" y="206.8" width="28.4" height="81.2" rx="2" class="bar"/><rect x="530.8" y="220.2" width="28.4" height="67.8" rx="2" class="bar"/><rect x="579.8" y="244.9" width="28.4" height="43.1" rx="2" class="bar"/><rect x="628.9" y="237.9" width="28.4" height="50.1" rx="2" class="bar"/><rect x="677.9" y="239.8" width="28.4" height="48.2" rx="2" class="bar"/><rect x="727.0" y="233.6" width="28.4" height="54.4" rx="2" class="bar"/><rect x="776.0" y="187.4" width="28.4" height="100.6" rx="2" class="bar"/><rect x="825.1" y="196.7" width="28.4" height="91.3" rx="2" class="bar"/><rect x="874.1" y="185.2" width="28.4" height="102.8" rx="2" class="bar"/><rect x="923.2" y="210.4" width="28.4" height="77.6" rx="2" class="bar"/><rect x="972.2" y="244.2" width="28.4" height="43.8" rx="2" class="bar"/><rect x="1021.3" y="202.4" width="28.4" height="85.6" rx="2" class="bar hi"/><line x1="30" x2="1060" y1="288" y2="288" class="base"/></svg><span class="tl-x" style="left:5.05%">janv.<b>2025</b></span><span class="tl-x" style="left:9.59%">févr.</span><span class="tl-x" style="left:14.13%">mars</span><span class="tl-x" style="left:18.67%">avr.</span><span class="tl-x" style="left:23.21%">mai</span><span class="tl-x" style="left:27.76%">juin</span><span class="tl-x" style="left:32.30%">juil.</span><span class="tl-x" style="left:36.84%">août</span><span class="tl-x" style="left:41.38%">sept.</span><span class="tl-v" style="left:41.38%;top:63.3%">4&#8239;559</span><span class="tl-x" style="left:45.92%">oct.</span><span class="tl-x" style="left:50.46%">nov.</span><span class="tl-x" style="left:55.00%">déc.</span><span class="tl-x" style="left:59.55%">janv.<b>2026</b></span><span class="tl-x" style="left:64.09%">févr.</span><span class="tl-x" style="left:68.63%">mars</span><span class="tl-x" style="left:73.17%">avr.</span><span class="tl-x" style="left:77.71%">mai</span><span class="tl-x" style="left:82.25%">juin</span><span class="tl-x" style="left:86.79%">juil.</span><span class="tl-x" style="left:91.34%">août</span><span class="tl-x" style="left:95.88%">sept.</span><span class="tl-v" style="left:95.88%;top:60.1%">5&#8239;129</span><span class="tl-ax" style="top:2%">Affichages Google et Bing</span><span class="tl-ax" style="top:44%">Clics</span>
-            <i class="vl" style="left:50.46%;top:-190px"></i><i class="vl" style="left:64.1%;top:-120px"></i><i class="vl" style="left:68.63%;top:-58px"></i><i class="vl up" style="left:73.17%"></i><span class="tl-up ay-pop" style="left:73.17%;--d:1.8s">Clics ×2 en avril</span><i class="vl" style="left:95.88%;top:-190px"></i>
+          <div class="po r1 c bad ay-pop" style="left:29.59%;--d:.5s"><b>7 novembre 2025</b>Nouveau site, anciennes pages mal redirigées, formulaires sans source</div>
+          <div class="po r1 s ay-pop" style="left:43.8%;--d:.9s"><b>Décembre à février</b>Redirections ajoutées une à une, liens cassés de 30 à 0</div>
+          <div class="po r3 s wide ay-pop" style="left:54.4%;--d:1.3s"><b>26 février au 5 mars</b>Source des demandes rétablie, 42 pages de texte factice retirées, 238 liens vers la préproduction et 158 images corrigés</div>
+          <div class="po r1 e ay-pop" style="left:96.4%;--d:1.7s"><b>17 au 29 septembre</b>28 titres réécrits, 6 redirections, 59 images</div>
+          <div class="tlc-ch"><svg viewBox="0 0 1080 300" preserveAspectRatio="none"><path d="M64.3,118 L64.3,26.0 L133.0,40.9 L201.7,37.6 L270.3,47.4 L339.0,56.8 L407.7,89.1 L476.3,83.7 L545.0,88.3 L613.7,88.1 L682.3,96.0 L751.0,99.2 L819.7,99.4 L888.3,103.0 L957.0,102.4 L1025.7,97.3 L1025.7,118 Z" class="imp-a"/><polyline points="64.3,26.0 133.0,40.9 201.7,37.6 270.3,47.4 339.0,56.8 407.7,89.1 476.3,83.7 545.0,88.3 613.7,88.1 682.3,96.0 751.0,99.2 819.7,99.4 888.3,103.0 957.0,102.4 1025.7,97.3" class="imp-l"/><rect x="44.4" y="148.8" width="39.8" height="139.2" rx="2" class="bar"/><rect x="113.1" y="213.4" width="39.8" height="74.6" rx="2" class="bar"/><rect x="181.8" y="152.4" width="39.8" height="135.6" rx="2" class="bar"/><rect x="250.4" y="148.0" width="39.8" height="140.0" rx="2" class="bar hi"/><rect x="319.1" y="175.0" width="39.8" height="113.0" rx="2" class="bar"/><rect x="387.8" y="224.1" width="39.8" height="63.9" rx="2" class="bar hi"/><rect x="456.4" y="208.0" width="39.8" height="80.0" rx="2" class="bar"/><rect x="525.1" y="215.9" width="39.8" height="72.1" rx="2" class="bar"/><rect x="593.8" y="207.9" width="39.8" height="80.1" rx="2" class="bar"/><rect x="662.4" y="218.8" width="39.8" height="69.2" rx="2" class="bar"/><rect x="731.1" y="232.4" width="39.8" height="55.6" rx="2" class="bar"/><rect x="799.8" y="225.0" width="39.8" height="63.0" rx="2" class="bar"/><rect x="868.4" y="241.1" width="39.8" height="46.9" rx="2" class="bar"/><rect x="937.1" y="261.8" width="39.8" height="26.2" rx="2" class="bar"/><rect x="1005.8" y="236.5" width="39.8" height="51.5" rx="2" class="bar"/><line x1="30" x2="1060" y1="288" y2="288" class="base"/></svg><span class="tl-x" style="left:5.96%">juil.<b>2025</b></span><span class="tl-x" style="left:12.31%">août</span><span class="tl-x" style="left:18.67%">sept.</span><span class="tl-x" style="left:25.03%">oct.</span><span class="tl-v" style="left:25.03%;top:42.0%">12&#8239;240</span><span class="tl-x" style="left:31.39%">nov.</span><span class="tl-x" style="left:37.75%">déc.</span><span class="tl-v" style="left:37.75%;top:67.4%">5&#8239;587</span><span class="tl-x" style="left:44.10%">janv.<b>2026</b></span><span class="tl-x" style="left:50.46%">févr.</span><span class="tl-x" style="left:56.82%">mars</span><span class="tl-x" style="left:63.18%">avr.</span><span class="tl-x" style="left:69.54%">mai</span><span class="tl-x" style="left:75.90%">juin</span><span class="tl-x" style="left:82.25%">juil.</span><span class="tl-x" style="left:88.61%">août</span><span class="tl-x" style="left:94.97%">sept.</span><span class="tl-ax" style="top:2%">Affichages Google</span><span class="tl-ax" style="top:44%">Clics</span>
+            <i class="vl bad" style="left:29.59%;top:-190px"></i><i class="vl" style="left:43.8%;top:-190px"></i><i class="vl" style="left:54.4%;top:-58px"></i><i class="vl" style="left:96.4%;top:-190px"></i>
           </div>
         </div>
-        <p class="footnote">Search Console Google et Bing Webmaster Tools, tracé depuis leurs exports. Septembre 2026 fait 5&#8239;129 clics, contre 4&#8239;559 en septembre 2025.</p>
+        <p class="footnote">Search Console Google, totaux du site. Quand Google nous affiche, on est davantage cliqués, taux de clic de 2,29&nbsp;% à 3,38&nbsp;% entre septembre 2025 et septembre 2026.</p>
       </div>
     </section>
 
-    <section data-name="La visibilité remonte" class="slide airy" data-chapter="seo">
+    <section data-name="Mieux placés, plus cliqués" class="slide airy" data-chapter="seo">
       <div class="slide-inner insights">
-        <div class="slide-eyebrow">SEO · Google et Bing, depuis le creux de mars</div>
-        <h1 class="slide-title compact">La visibilité remonte de 65&nbsp;% en six mois</h1>
+        <div class="slide-eyebrow">SEO · Google, septembre 2025 contre septembre 2026</div>
+        <h1 class="slide-title compact">Nos pages sont mieux placées et plus cliquées, la visibilité reste à regagner</h1>
         <div class="vr">
-          <div class="vr-c hot ay-in" style="--d:.2s"><span>Affichages depuis mars</span><div class="vr-n"><s>124&#8239;k</s><i data-lucide="arrow-right"></i><b>205&#8239;k</b></div><em class="ay-pop" style="--d:1.0s">+65&nbsp;%</em><p>Google et Bing nous montrent de nouveau, mois après mois.</p></div>
-          <div class="vr-c ay-in" style="--d:.5s"><span>Clics sur un an</span><div class="vr-n"><s>4&#8239;559</s><i data-lucide="arrow-right"></i><b>5&#8239;129</b></div><em class="ay-pop" style="--d:1.3s">+12&nbsp;%</em><p>Septembre 2026 dépasse septembre 2025, d'avant la refonte.</p></div>
-          <div class="vr-c next ay-in" style="--d:.8s"><span>Affichages sur un an</span><div class="vr-n"><s>338&#8239;k</s><i data-lucide="arrow-right"></i><b>205&#8239;k</b></div><em class="ay-pop" style="--d:1.6s">−39&nbsp;%</em><p>La visibilité reste à reconquérir, c'est l'objectif du chantier WebTribe.</p></div>
+          <div class="vr-c hot ay-in" style="--d:.2s"><span>Taux de clic sur un an</span><div class="vr-n"><s>2,29&nbsp;%</s><i data-lucide="arrow-right"></i><b>3,38&nbsp;%</b></div><em class="ay-pop" style="--d:1.0s">+48&nbsp;%</em><p>Les internautes qui voient nos pages dans Google cliquent davantage.</p></div>
+          <div class="vr-c hot ay-in" style="--d:.5s"><span>Position moyenne sur un an</span><div class="vr-n"><s>16,2</s><i data-lucide="arrow-right"></i><b>9,9</b></div><em class="ay-pop" style="--d:1.3s">Page 1</em><p>En moyenne, nos pages apparaissent désormais en première page.</p></div>
+          <div class="vr-c next ay-in" style="--d:.8s"><span>Affichages sur un an</span><div class="vr-n"><s>517&#8239;k</s><i data-lucide="arrow-right"></i><b>133&#8239;k</b></div><em class="ay-pop" style="--d:1.6s">−74&nbsp;%</em><p>La visibilité reste à reconquérir, c'est l'objectif du chantier WebTribe.</p></div>
         </div>
-        <div class="vr-take ay-in" style="--d:2.0s"><i data-lucide="lightbulb"></i>On a récupéré les clics. Il reste à récupérer la visibilité perdue avec la refonte.</div>
+        <div class="vr-take ay-in" style="--d:2.0s"><i data-lucide="lightbulb"></i>Nos pages sont mieux classées et plus cliquées. Il reste à regagner la visibilité perdue avec la refonte, c'est le chantier WebTribe.</div>
+        <p class="footnote">Search Console Google, totaux du site, septembre 2025 contre septembre 2026.</p>
       </div>
     </section>
 
