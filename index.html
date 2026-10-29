@@ -1071,6 +1071,55 @@
     .gc-sub { font-size:12.5px; color:var(--ay-gray); font-weight:400; margin-top:2px; }
     .gracias-photo { position:absolute; top:0; right:0; bottom:46px; width:50%; overflow:hidden; }
     .gracias-photo img { width:100%; height:100%; object-fit:cover; object-position:50% 35%; display:block; }
+
+    .ld { display:grid; grid-template-columns:1fr 46px 1fr; align-items:center; gap:10px; max-width:980px; margin:0 auto; text-align:left; }
+    .ldc { background:var(--bg-white); border:1px solid var(--tint-grey-10); border-radius:14px; padding:12px 16px 8px; }
+    .ldc.new { border-color:var(--ay-primary); box-shadow:0 0 0 4px rgba(17,169,230,.12); }
+    .ldc-h { display:flex; align-items:center; gap:8px; font-size:14px; font-weight:800; color:var(--ay-dark); padding-bottom:6px; }
+    .ldc-h svg { width:18px; height:18px; color:var(--ay-primary); }
+    .ldc.old .ldc-h svg { color:var(--kpi-down); }
+    .ldc-h em { margin-left:auto; font-style:normal; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--ay-gray); background:var(--ay-bg-light); border-radius:6px; padding:2px 7px; }
+    .ldr { display:grid; grid-template-columns:130px 1fr; gap:10px; padding:4px 0; border-top:1px solid var(--ay-bg-light); font-size:13px; }
+    .ldr span { color:var(--ay-gray); }
+    .ldr b { color:var(--ay-dark); font-weight:700; }
+    .ldr.no b { color:var(--kpi-down); font-weight:600; }
+    .ld-a { display:flex; justify-content:center; color:var(--ay-primary); }
+    .ld-a svg { width:28px; height:28px; }
+    .ld + .att { margin-top:16px; }
+    .blx { display:grid; grid-template-columns:300px 1fr; gap:26px; max-width:1140px; margin:0 auto; text-align:left; align-items:start; }
+    .blx-k { display:block; font-size:12px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--ay-gray); margin-bottom:8px; }
+    .blx .bl-pages { margin-bottom:12px; gap:14px; }
+    .blx .blp-body { padding:14px 12px 16px; }
+    .blx .blp-t { font-size:14px; margin-bottom:10px; }
+    .blx .blp-f { font-size:12px; }
+    .blx-old .blp { margin-bottom:12px; }
+    .blx-old .blp-body { background:linear-gradient(135deg,#6b7c89,#8a9aa6); }
+    .blx p { display:flex; gap:8px; align-items:flex-start; margin:0 0 7px; font-size:13.5px; color:var(--ay-dark); line-height:1.35; }
+    .blx p svg { width:16px; height:16px; flex:0 0 16px; margin-top:1px; color:var(--kpi-down); }
+    .blx p.ok svg { color:var(--kpi-up-text); }
+    .gxs { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; max-width:1160px; margin:0 auto; text-align:left; }
+    .gx { background:var(--bg-white); border:1px solid var(--tint-grey-10); border-radius:14px; padding:12px 14px; display:flex; flex-direction:column; gap:8px; }
+    .gx-tag { display:flex; justify-content:space-between; align-items:baseline; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; color:#b7791f; }
+    .gx-tag.red { color:var(--kpi-down); }
+    .gx-tag b { font-size:12px; color:var(--ay-dark); letter-spacing:0; text-transform:none; }
+    .gx-pdf { background:var(--ay-bg-light); border-radius:8px; padding:10px; min-height:84px; display:flex; flex-direction:column; justify-content:space-between; gap:8px; border-left:3px solid var(--ay-primary); }
+    .gx-pdf small { font-size:11.5px; color:var(--ay-dark); font-weight:700; line-height:1.3; }
+    .gx-btn { align-self:flex-start; background:var(--ay-primary); color:var(--bg-white); font-size:11px; font-weight:800; border-radius:6px; padding:5px 10px; }
+    .gx-btn.off { background:transparent; color:var(--ay-gray); border:1px dashed var(--tint-grey-15); }
+    .gx code { font-family:ui-monospace,Menlo,monospace; font-size:10.5px; line-height:1.35; color:var(--kpi-down); background:rgba(239,68,68,.06); border-radius:6px; padding:6px 8px; word-break:break-all; }
+    .gx code.none { color:var(--ay-gray); background:var(--ay-bg-light); font-family:inherit; font-style:italic; }
+    .gx p { margin:0; font-size:12.5px; color:var(--ay-gray); line-height:1.35; }
+    .gxs + .shf-take { margin-top:18px; }
+    .sx2 { display:grid; grid-template-columns:1.25fr 1fr; gap:26px; max-width:1160px; margin:0 auto; align-items:center; text-align:left; }
+    .sx2-shots { position:relative; height:330px; }
+    .sx2-s { position:absolute; margin:0; border-radius:10px; overflow:hidden; background:var(--bg-white); box-shadow:0 14px 34px rgba(0,69,109,.18); border:1px solid var(--tint-grey-10); }
+    .sx2-s img { display:block; width:100%; }
+    .sx2-s.a { left:0; top:0; width:78%; }
+    .sx2-s.b { right:0; bottom:0; width:62%; }
+    .sx2-l { display:flex; flex-direction:column; gap:12px; }
+    .sx2-l > span { display:grid; grid-template-columns:32px 1fr; gap:10px; align-items:start; font-size:13.5px; color:var(--ay-gray); line-height:1.35; }
+    .sx2-l > span > svg { width:22px; height:22px; color:var(--ay-primary); margin-top:2px; }
+    .sx2-l b { display:block; font-size:15.5px; color:var(--ay-dark); }
   </style>
 </head>
 <body>
@@ -1594,7 +1643,7 @@
           <div class="pj ay-in" style="--d:.45s"><div class="pj-h"><i data-lucide="layers"></i><em class="live">En ligne</em></div><b>Pages contact par expertise</b><p>Une page par métier depuis le 15 octobre</p></div>
           <div class="pj ay-in" style="--d:.6s"><div class="pj-h"><i data-lucide="book-open"></i><em class="live">Diffusé</em></div><b>Guide UTM</b><p>Tome 1 de Things That Click, en trois langues</p></div>
           <div class="pj ay-in" style="--d:.75s"><div class="pj-h"><i data-lucide="book-open-check"></i><em class="wip">En cours</em></div><b>Une prise de contact dans chaque guide</b><p>14 guides remis en ligne, chacun mène au contact de son métier</p></div>
-          <div class="pj ay-in" style="--d:.82s"><div class="pj-h"><i data-lucide="hard-hat"></i><em class="wip">Lancement le 27 novembre</em></div><b>sinistralite.ayming.fr</b><p>La sinistralité de 729 secteurs, et un autodiagnostic qui mène au rendez-vous</p></div>
+          <div class="pj ay-in" style="--d:.82s"><div class="pj-h"><i data-lucide="hard-hat"></i><em class="wip">Lancement le 27 novembre</em></div><b>sinistralite.ayming.fr</b><p>La sinistralité de 728 secteurs, et un autodiagnostic qui mène au rendez-vous</p></div>
           <div class="pj ay-in" style="--d:.9s"><div class="pj-h"><i data-lucide="compass"></i><em class="wip">En test</em></div><b>SEO avec WebTribe</b><p>Le plugin GPSem en préproduction, en ligne avant fin 2026</p></div>
         </div>
       </div>
@@ -1604,16 +1653,10 @@
       <div class="slide-inner insights">
         <div class="slide-eyebrow">Projet · Attribution des leads</div>
         <h1 class="slide-title compact">Le nouveau site avait perdu la source des demandes, le projet l'a rétablie</h1>
-        <div class="flow">
-          <div class="fl ay-in" style="--d:.2s"><i data-lucide="mouse-pointer-click"></i><b>Le clic</b><span>UTM, clic Google, Microsoft ou Meta</span></div>
-          <div class="fl-a ay-fade" style="--d:.5s"></div>
-          <div class="fl ay-in" style="--d:.6s"><i data-lucide="hard-drive"></i><b>Gardé 90 jours</b><span>même si le visiteur revient plus tard</span></div>
-          <div class="fl-a ay-fade" style="--d:.9s"></div>
-          <div class="fl ay-in" style="--d:1.0s"><i data-lucide="file-text"></i><b>Le formulaire</b><span>source, SIRET et fonction ajoutés</span></div>
-          <div class="fl-a ay-fade" style="--d:1.3s"></div>
-          <div class="fl ay-in" style="--d:1.4s"><i data-lucide="send"></i><b>Pardot</b><span>le prospect garde son origine</span></div>
-          <div class="fl-a ay-fade" style="--d:1.7s"></div>
-          <div class="fl hot ay-in" style="--d:1.8s"><i data-lucide="star"></i><b>Salesforce</b><span>le lead sait d'où il vient</span></div>
+        <div class="ld">
+          <div class="ldc old ay-in" style="--d:.2s"><div class="ldc-h"><i data-lucide="user-x"></i>Un lead au lancement du site</div><div class="ldr no"><span>Origine</span><b>vide</b></div><div class="ldr no"><span>Source / support</span><b>vide</b></div><div class="ldr no"><span>Campagne</span><b>vide</b></div><div class="ldr no"><span>Entreprise</span><b>saisie libre</b></div><div class="ldr no"><span>SIRET</span><b>vide</b></div><div class="ldr no"><span>Fonction</span><b>vide</b></div></div>
+          <div class="ld-a ay-fade" style="--d:.7s"><i data-lucide="arrow-right"></i></div>
+          <div class="ldc new ay-in" style="--d:.9s"><div class="ldc-h"><i data-lucide="user-check"></i>Le même lead aujourd'hui<em>Exemple</em></div><div class="ldr"><span>Origine</span><b>Paid Search</b></div><div class="ldr"><span>Source / support</span><b>google / cpc</b></div><div class="ldr"><span>Campagne</span><b>2026-sea-cir</b></div><div class="ldr"><span>Entreprise</span><b>Exemple Industrie SAS</b></div><div class="ldr"><span>SIRET</span><b>123 456 789 00012</b></div><div class="ldr"><span>Fonction</span><b>Directeur financier</b></div></div>
         </div>
         <div class="att">
           <div class="att-n ay-pop" style="--d:2.2s"><s>0&nbsp;%</s><i data-lucide="arrow-right"></i><b>89,7&nbsp;%</b><em>Lancement du site</em><em class="now">Aujourd'hui</em><span>des demandes arrivent avec leur source. La migration du site l'avait coupée.</span></div>
@@ -1626,43 +1669,63 @@
       </div>
     </section>
 
-    <!-- 19 · PAGES CONTACT -->
     <section data-name="Pages contact par expertise" class="slide airy" data-chapter="projets">
       <div class="slide-inner insights">
         <div class="slide-eyebrow">Projet · Pages contact · Depuis le 15 octobre</div>
-        <h1 class="slide-title compact">Chaque expertise a sa page contact</h1>
-        <div class="bl-pages">
-          <div class="blp ay-in" style="--d:.2s"><div class="blp-url"><i data-lucide="lock"></i>ayming.fr/finance-taxes/contactez-nous-taxes</div><div class="blp-body"><div class="blp-t">Faites-nous part de vos projets !</div><div class="blp-f">Votre demande Finance &amp; Taxes<i data-lucide="chevron-down"></i></div></div></div>
-          <div class="blp ay-in" style="--d:.5s"><div class="blp-url"><i data-lucide="lock"></i>ayming.fr/innovation/contactez-nous-innovation</div><div class="blp-body"><div class="blp-t">Faites-nous part de vos projets !</div><div class="blp-f">Votre demande Innovation<i data-lucide="chevron-down"></i></div></div></div>
-          <div class="blp ay-in" style="--d:.8s"><div class="blp-url"><i data-lucide="lock"></i>ayming.fr/ressources-humaines/contactez-nous</div><div class="blp-body"><div class="blp-t">Faites-nous part de vos projets !</div><div class="blp-f">Votre demande Ressources Humaines<i data-lucide="chevron-down"></i></div></div></div>
+        <h1 class="slide-title compact">Une page contact par métier, pour mesurer et mieux qualifier chaque demande</h1>
+        <div class="blx">
+          <div class="blx-old ay-in" style="--d:.2s">
+            <span class="blx-k">Avant, une seule page</span>
+            <div class="blp"><div class="blp-url"><i data-lucide="lock"></i>ayming.fr/contactez-nous</div><div class="blp-body"><div class="blp-t">Contactez-nous</div><div class="blp-f">Votre demande, toutes expertises<i data-lucide="chevron-down"></i></div></div></div>
+            <p><i data-lucide="x"></i>Les demandes des trois métiers se mélangent, impossible de suivre les conversions de chacun</p>
+            <p><i data-lucide="x"></i>Un formulaire générique, le visiteur choisit lui-même son sujet dans une liste</p>
+          </div>
+          <div class="blx-new ay-in" style="--d:.7s">
+            <span class="blx-k">Aujourd'hui, une page par métier</span>
+            <div class="bl-pages">
+              <div class="blp"><div class="blp-url"><i data-lucide="lock"></i>ayming.fr/finance-taxes/contactez-nous-taxes</div><div class="blp-body"><div class="blp-t">Finance &amp; Taxes</div><div class="blp-f">Votre offre Taxes<i data-lucide="chevron-down"></i></div></div></div>
+              <div class="blp"><div class="blp-url"><i data-lucide="lock"></i>ayming.fr/innovation/contactez-nous-innovation</div><div class="blp-body"><div class="blp-t">Innovation</div><div class="blp-f">Votre offre Innovation<i data-lucide="chevron-down"></i></div></div></div>
+              <div class="blp"><div class="blp-url"><i data-lucide="lock"></i>ayming.fr/ressources-humaines/contactez-nous</div><div class="blp-body"><div class="blp-t">Ressources humaines</div><div class="blp-f">Votre offre RH<i data-lucide="chevron-down"></i></div></div></div>
+            </div>
+            <p class="ok"><i data-lucide="check"></i>Chaque métier voit ses conversions, la page d'origine part avec la demande dans GA4 et Pardot</p>
+            <p class="ok"><i data-lucide="check"></i>Le formulaire demande directement l'offre du métier, la demande arrive déjà qualifiée</p>
+            <p class="ok"><i data-lucide="check"></i>Les guides et les pages offre mènent tout droit à la bonne page</p>
+          </div>
         </div>
-        <div class="bl-route ay-in" style="--d:1.3s"><i data-lucide="arrow-down"></i>Un seul formulaire, chaque demande arrive dans Pardot avec son expertise et sa page d'origine</div>
       </div>
     </section>
 
     <section data-name="Une prise de contact dans chaque guide" class="slide airy" data-chapter="projets">
       <div class="slide-inner insights">
-        <div class="slide-eyebrow">Projet · Lead Priority Process · Les guides</div>
-        <h1 class="slide-title compact">Nos guides ne menaient à aucun rendez-vous, chacun mène désormais au contact de son métier</h1>
-        <div class="lp">
-          <div class="lp-b bad ay-in" style="--d:.2s"><span>Avant, sur 101 guides</span><b>0</b><p>guide menait à la page contact de son métier</p><small>78&nbsp;% n'offraient aucun moyen de joindre une équipe France</small></div>
-          <div class="lp-b hot ay-in" style="--d:.6s"><span>Depuis le 27 octobre</span><b>14</b><p>guides remis en ligne, dont 11 RH</p><small>36 liens vers la page contact du métier, une page « Et maintenant&nbsp;? » avant la 4e de couverture</small></div>
-          <div class="lp-b ay-in" style="--d:1.0s"><span>Plus légers</span><b>169 → 37&nbsp;Mo</b><p>pour les 14 guides</p><small>des PDF qui s'ouvrent vite, sur mobile aussi</small></div>
+        <div class="slide-eyebrow">Projet · Lead Priority Process · 1&#8239;231 liens relevés dans 101 guides</div>
+        <h1 class="slide-title compact">Nos guides envoyaient vers des adresses mortes, sans contact ni suivi, on les reprend un par un</h1>
+        <div class="gxs">
+          <div class="gx ay-in" style="--d:.2s"><div class="gx-tag">Ancienne adresse<b>74 liens</b></div><div class="gx-pdf"><small>Cartographie des financements pour les PME innovantes</small><span class="gx-btn">IP-BOX</span></div><code>ayming.fr/expertise/innovation-generez-de-la-valeur…/ip-box-valorisez-vos-actifs…</code><p>Redirigé vers la page CIR, le lecteur ne trouve pas l'IP Box</p></div>
+          <div class="gx ay-in" style="--d:.5s"><div class="gx-tag red">Lien cassé<b>129 liens</b></div><div class="gx-pdf"><small>Tout savoir sur le taux de cotisation AT/MP, p.&nbsp;19</small><span class="gx-btn">Télécharger le baromètre</span></div><code>…/barometre-de-labsenteisme…/https:/www.ayming.fr/…</code><p>Deux adresses collées, erreur 404</p></div>
+          <div class="gx ay-in" style="--d:.8s"><div class="gx-tag">Sans UTM<b>146 liens</b></div><div class="gx-pdf"><small>Les enjeux clés de la déclaration d'accident du travail, p.&nbsp;47</small><span class="gx-btn">CONTACTEZ-NOUS&nbsp;!</span></div><code>ayming.fr/contactez-nous/</code><p>La demande arrive sans le guide qui l'a amenée, sur la page contact générale</p></div>
+          <div class="gx ay-in" style="--d:1.1s"><div class="gx-tag red">Aucun contact<b>79 guides</b></div><div class="gx-pdf"><small>78&nbsp;% des 101 guides</small><span class="gx-btn off">Pas de bouton</span></div><code class="none">aucun bouton, lien, QR code ni page contact</code><p>Le lecteur convaincu ne sait pas comment nous joindre</p></div>
         </div>
-        <div class="shf-take ay-in" style="--d:1.4s"><i data-lucide="target"></i>Prochaine étape, 84 guides reçoivent leur page « Et maintenant&nbsp;? », vers les pages contact par métier en ligne depuis le 15 octobre.</div>
+        <div class="shf-take ay-in" style="--d:1.5s"><i data-lucide="target"></i>Depuis le 27 octobre, 14 guides corrigés, dont 11 RH&nbsp;: 36 liens vers la page contact du métier, chaque lien suivi, et des PDF passés de 169 à 37&nbsp;Mo. Prochaine étape, 84 guides.</div>
       </div>
     </section>
 
     <section data-name="sinistralite.ayming.fr" class="slide airy" data-chapter="projets">
       <div class="slide-inner insights">
         <div class="slide-eyebrow">Projet · sinistralite.ayming.fr · Lancement le 27 novembre</div>
-        <h1 class="slide-title compact">Un outil public sur la sinistralité, qui amène les RH jusqu'à nos offres AT/MP</h1>
-        <div class="lp">
-          <div class="lp-b ay-in" style="--d:.2s"><span>Être trouvés</span><b>729</b><p>secteurs, chacun avec sa page</p><small>accidents du travail, maladies professionnelles et trajet, ouvertes à Google au lancement</small></div>
-          <div class="lp-b ay-in" style="--d:.6s"><span>Engager</span><b>8</b><p>questions d'autodiagnostic</p><small>l'entreprise comparée à son secteur, et un rapport personnalisé à télécharger</small></div>
-          <div class="lp-b hot ay-in" style="--d:1.0s"><span>Convertir</span><b>Pardot</b><p>chaque demande arrive avec sa source</p><small>le rapport renvoie vers nos pages offre et la page contact RH</small></div>
+        <h1 class="slide-title compact">Un outil sur un sous-domaine d'ayming.fr, qui amène les RH jusqu'à nos offres AT/MP</h1>
+        <div class="sx2">
+          <div class="sx2-shots">
+            <figure class="sx2-s a ay-in" style="--d:.2s"><div class="pr-bar"><span class="ay-url-dots"><i></i><i></i><i></i></span><span class="pr-url"><i data-lucide="lock"></i>sinistralite.ayming.fr</span></div><img src="img/sini-landing.jpg" alt="La page d'accueil de sinistralite.ayming.fr, l'autodiagnostic de sinistralité AT/MP"></figure>
+            <figure class="sx2-s b ay-in" style="--d:.6s"><div class="pr-bar"><span class="ay-url-dots"><i></i><i></i><i></i></span><span class="pr-url"><i data-lucide="lock"></i>sinistralite.ayming.fr/accueil</span></div><img src="img/sini-accueil.jpg" alt="L'outil, accidents du travail, maladies professionnelles et trajet, avec des liens vers ayming.fr"></figure>
+          </div>
+          <div class="sx2-l">
+            <span class="ay-row" style="--d:1.0s"><i data-lucide="globe"></i><span><b>Notre adresse, notre rythme</b>La marque Ayming, construit et mis en ligne par nos soins sans attendre les évolutions du site groupe</span></span>
+            <span class="ay-row" style="--d:1.2s"><i data-lucide="search"></i><span><b>728 pages secteur pour Google</b>des recherches « sinistralité + métier » que le site ne couvre pas aujourd'hui</span></span>
+            <span class="ay-row" style="--d:1.4s"><i data-lucide="link"></i><span><b>Des liens vers ayming.fr</b>livres blancs, offres AT/MP et page contact RH, depuis l'outil et chaque rapport</span></span>
+            <span class="ay-row" style="--d:1.6s"><i data-lucide="send"></i><span><b>Des demandes mesurées</b>l'autodiagnostic arrive dans Pardot avec sa source</span></span>
+          </div>
         </div>
-        <div class="shf-take ay-in" style="--d:1.4s"><i data-lucide="info"></i>Pour Google, un sous-domaine compte comme un site à part. L'outil ne gonfle pas les chiffres d'ayming.fr, il attire de nouvelles recherches et renvoie ces visiteurs vers nos offres.</div>
+        <p class="footnote">Google traite un sous-domaine comme un site à part&nbsp;: l'outil ne fait pas monter les chiffres d'ayming.fr, il ajoute une porte d'entrée vers nos offres.</p>
       </div>
     </section>
 
