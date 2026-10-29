@@ -1152,6 +1152,17 @@
     .sx3-r .snip-d { height:auto; font-size:12.5px; }
     .sx3-shot { margin:0; border-radius:10px; overflow:hidden; border:1px solid var(--tint-grey-10); box-shadow:0 10px 26px rgba(0,69,109,.14); }
     .sx3-shot img { display:block; width:100%; height:190px; object-fit:cover; object-position:50% 72%; }
+
+    .gx3s { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:14px; max-width:1180px; margin:0 auto; text-align:left; }
+    .gx3 { background:var(--bg-white); border:1px solid var(--tint-grey-10); border-radius:14px; padding:10px 12px 12px; display:flex; flex-direction:column; gap:5px; }
+    .gx3.after { border-color:var(--ay-primary); box-shadow:0 0 0 4px rgba(17,169,230,.12); }
+    .gx3-a4 { aspect-ratio:210/297; height:220px; align-self:center; border-radius:6px; overflow:hidden; box-shadow:0 6px 16px rgba(0,69,109,.18); margin-bottom:6px; }
+    .gx3-a4 img { width:100%; height:100%; object-fit:cover; display:block; }
+    .gx-tag.ok { color:var(--kpi-up-text); }
+    .gx3-n { display:flex; align-items:baseline; gap:6px; font-size:13px; color:var(--ay-gray); font-weight:700; }
+    .gx3-n b { font-size:30px; font-weight:800; color:var(--ay-dark); line-height:1; }
+    .gx3 p { margin:0; font-size:12px; color:var(--ay-gray); line-height:1.35; }
+    .gx3s + .shf-take { margin-top:14px; }
   </style>
 </head>
 <body>
@@ -1198,13 +1209,14 @@
       <div class="nav-item" data-slide="31"><span class="nav-item-number">32</span>Pages contact par expertise</div>
       <div class="nav-item" data-slide="32"><span class="nav-item-number">33</span>Une prise de contact dans chaque guide</div>
       <div class="nav-item" data-slide="33"><span class="nav-item-number">34</span>sinistralite.ayming.fr</div>
-      <div class="nav-item" data-slide="34"><span class="nav-item-number">35</span>Guide UTM</div>
-      <div class="nav-item" data-slide="35"><span class="nav-item-number">36</span>SEO avec WebTribe</div>
-      <div class="nav-item" data-slide="36"><span class="nav-item-number">37</span>Merci</div>
+      <div class="nav-item" data-slide="34"><span class="nav-item-number">35</span>Pourquoi un sous-domaine</div>
+      <div class="nav-item" data-slide="35"><span class="nav-item-number">36</span>Guide UTM</div>
+      <div class="nav-item" data-slide="36"><span class="nav-item-number">37</span>SEO avec WebTribe</div>
+      <div class="nav-item" data-slide="37"><span class="nav-item-number">38</span>Merci</div>
     </div>
   </nav>
 
-  <div class="slide-counter"><span class="current">1</span>/37</div>
+  <div class="slide-counter"><span class="current">1</span>/38</div>
 
   <main class="presentation">
 
@@ -1661,7 +1673,7 @@
           <p class="chap-k ay-in" style="--d:.2s">Chapitre 5</p>
           <h1 class="ay-in" style="--d:.3s">Les projets en cours</h1>
           <p class="chap-s ay-in" style="--d:.4s">Ce qu'on construit pour mesurer, convertir et être trouvés</p>
-          <ul><li class="ay-row" style="--d:0.50s">Six projets en un coup d'œil</li><li class="ay-row" style="--d:0.62s">Attribution des leads</li><li class="ay-row" style="--d:0.74s">Pages contact par expertise</li><li class="ay-row" style="--d:0.86s">Guide UTM</li><li class="ay-row" style="--d:0.98s">Une prise de contact dans chaque guide</li><li class="ay-row" style="--d:1.10s">sinistralite.ayming.fr</li><li class="ay-row" style="--d:1.22s">SEO avec WebTribe</li></ul>
+          <ul><li class="ay-row" style="--d:0.50s">Six projets en un coup d'œil</li><li class="ay-row" style="--d:0.62s">Attribution des leads</li><li class="ay-row" style="--d:0.74s">Pages contact par expertise</li><li class="ay-row" style="--d:0.86s">Guide UTM</li><li class="ay-row" style="--d:0.98s">Une prise de contact dans chaque guide</li><li class="ay-row" style="--d:1.10s">sinistralite.ayming.fr</li><li class="ay-row" style="--d:1.22s">Pourquoi un sous-domaine</li><li class="ay-row" style="--d:1.34s">SEO avec WebTribe</li></ul>
         </div>
       </div>
     </section>
@@ -1691,12 +1703,13 @@
             <div class="ay-form ay-in" style="--d:1.4s">
               <div class="ay-form-h">Demande de contact</div>
               <div class="ay-field"><span class="ay-fl">Nom</span><span class="ay-fi">Claire Martin</span></div>
-              <div class="ay-field"><span class="ay-fl">Entreprise</span><span class="ay-fi">Exemple Industrie SAS</span></div>
+              <div class="ay-field"><span class="ay-fl">Entreprise, recherchée dans le répertoire</span><span class="ay-fi">Exemple Industrie SAS · Lyon</span></div>
+              <div class="ay-field"><span class="ay-fl">Fonction, dans la liste</span><span class="ay-fi">Directeur financier</span></div>
               <div class="ay-hidden"><span class="ay-hidden-l">Champs cachés</span>
+                <div class="ay-hv"><span>SIRET</span><b>123 456 789 00012</b></div>
+                <div class="ay-hv"><span>Département</span><b>Finance</b></div>
                 <div class="ay-hv"><span>UTM Source</span><b>google</b></div>
                 <div class="ay-hv"><span>UTM Medium</span><b>cpc</b></div>
-                <div class="ay-hv"><span>UTM Campaign</span><b>2026-sea-cir</b></div>
-                <div class="ay-hv"><span>SIRET</span><b>123 456 789 00012</b></div>
               </div>
               <div class="ay-btn"><span class="ay-sent">Envoyé ✓</span></div>
             </div>
@@ -1706,15 +1719,16 @@
               <div class="ay-pd-b">
                 <div class="ay-pd-r"><span>Source</span><b>google</b></div>
                 <div class="ay-pd-r"><span>Medium</span><b>cpc</b></div>
-                <div class="ay-pd-r"><span>Campagne</span><b>2026-sea-cir</b></div>
+                <div class="ay-pd-r"><span>SIRET</span><b>123 456 789 00012</b></div>
                 <div class="ay-pd-r"><span>Fonction</span><b>Directeur financier</b></div>
+                <div class="ay-pd-r"><span>Département</span><b>Finance</b></div>
                 <span class="ay-pd-pill ay-pop" style="--d:2.7s">Origine gardée</span>
               </div>
             </div>
             <div class="ay-wire" style="--d:3.0s"><i></i></div>
-            <div class="ay-sfm ay-lit at2-sf" style="--d:3.2s"><div class="ay-sfm-h"><span class="ay-sfc-ic lead"><i data-lucide="user-plus"></i></span><div><div class="ay-fl">LEAD</div><div class="ay-sfm-n">Claire Martin</div></div></div><div class="ay-sfm-b"><div class="ay-sfm-r"><span>Origin</span><b>Paid Search</b></div><div class="ay-sfm-r"><span>UTM origine</span><b>google / cpc</b></div><div class="ay-sfm-r"><span>Entreprise</span><b>Exemple Industrie SAS</b></div><div class="ay-sfm-r"><span>SIRET</span><b>123 456 789 00012</b></div><div class="ay-sfm-r"><span>Fonction</span><b>Directeur financier</b></div></div></div>
+            <div class="ay-sfm ay-lit at2-sf" style="--d:3.2s"><div class="ay-sfm-h"><span class="ay-sfc-ic lead"><i data-lucide="user-plus"></i></span><div><div class="ay-fl">LEAD</div><div class="ay-sfm-n">Claire Martin</div></div></div><div class="ay-sfm-b"><div class="ay-sfm-r"><span>Origin</span><b>Paid Search</b></div><div class="ay-sfm-r"><span>UTM origine</span><b>google / cpc</b></div><div class="ay-sfm-r"><span>Entreprise</span><b>Exemple Industrie SAS</b></div><div class="ay-sfm-r"><span>SIRET</span><b>123 456 789 00012</b></div><div class="ay-sfm-r"><span>Position</span><b>Directeur financier</b></div><div class="ay-sfm-r"><span>Department</span><b>Finance</b></div></div></div>
           </div>
-          <div class="at2-k ay-in" style="--d:3.6s"><div class="at2-n"><s>0&nbsp;%</s><i data-lucide="arrow-right"></i><b>89,7&nbsp;%</b></div><p>des demandes arrivent aujourd'hui avec leur source. Au lancement du site, aucune.<small>Clics publicitaires gardés après acceptation des cookies, coordonnées proposées au visiteur qui revient, sélecteur d'entreprise sur 6 formulaires.</small></p></div>
+          <div class="at2-k ay-in" style="--d:3.6s"><div class="at2-n"><s>0&nbsp;%</s><i data-lucide="arrow-right"></i><b>89,7&nbsp;%</b></div><p>des demandes arrivent aujourd'hui avec leur source. Au lancement du site, aucune.<small>L'entreprise vient du répertoire officiel avec son SIRET, la fonction et le département d'une liste, Salesforce enrichit le reste. Clics publicitaires gardés après acceptation des cookies.</small></p></div>
         </div>
       </div>
     </section>
@@ -1749,19 +1763,40 @@
       <div class="slide-inner insights">
         <div class="slide-eyebrow">Projet · Lead Priority Process · 1&#8239;231 liens relevés dans 101 guides</div>
         <h1 class="slide-title compact">Nos guides envoyaient vers des adresses mortes, sans contact ni suivi, on les reprend un par un</h1>
-        <div class="gx2s">
-          <div class="gx2 ay-in" style="--d:.2s"><div class="gx2-img"><img src="img/guide-ipbox.jpg" alt="Cartographie des financements, les liens IP-BOX encadrés"></div><div class="gx-tag">Ancienne adresse<b>74 liens</b></div><code>ayming.fr/expertise/innovation-generez…/ip-box-valorisez…</code><p>Cartographie des financements, le lien IP-BOX mène à la page CIR</p></div>
-          <div class="gx2 ay-in" style="--d:.5s"><div class="gx2-img"><img src="img/guide-baro.jpg" alt="Guide taux AT/MP page 19, le lien du baromètre encadré"></div><div class="gx-tag red">Lien cassé<b>129 liens</b></div><code>…/barometre-de-labsenteisme…/https:/www.ayming.fr/…</code><p>Guide taux AT/MP, p.&nbsp;19, deux adresses collées, erreur 404</p></div>
-          <div class="gx2 ay-in" style="--d:.8s"><div class="gx2-img"><img src="img/guide-dat.jpg" alt="Livre blanc déclaration d'accident du travail page 47, le bouton Contactez-nous encadré"></div><div class="gx-tag">Sans UTM<b>146 liens</b></div><code>ayming.fr/contactez-nous/</code><p>Livre blanc DAT, p.&nbsp;47, la page contact générale, sans savoir quel guide a amené la demande</p></div>
-          <div class="gx2-after ay-in" style="--d:1.2s"><span>Après, la page ajoutée</span><img src="img/guide-ijss-contact.jpg" alt="La page Et maintenant ? ajoutée au guide IJSS, avec le rendez-vous et le QR code vers la page contact RH"><small>Guide IJSS, p.&nbsp;14, vers la page contact RH</small></div>
+        <div class="gx3s">
+          <div class="gx3 ay-in" style="--d:.2s"><div class="gx3-a4"><img src="img/cover-5080.jpg" alt="Couverture du guide SIRH"></div><div class="gx-tag">Ancienne adresse</div><div class="gx3-n"><b>74</b>liens</div><p>Guide SIRH, p.&nbsp;3, l'ancienne page conseil SIRH redirige vers la page coûts RH</p></div>
+          <div class="gx3 ay-in" style="--d:.45s"><div class="gx3-a4"><img src="img/cover-5403.jpg" alt="Couverture du guide taux de cotisation AT/MP"></div><div class="gx-tag red">Lien cassé</div><div class="gx3-n"><b>129</b>liens</div><p>Guide taux AT/MP, p.&nbsp;19, deux adresses collées, erreur 404</p></div>
+          <div class="gx3 ay-in" style="--d:.7s"><div class="gx3-a4"><img src="img/cover-5320.jpg" alt="Couverture du livre blanc déclaration d'accident du travail"></div><div class="gx-tag">Sans UTM</div><div class="gx3-n"><b>146</b>liens</div><p>Livre blanc DAT, p.&nbsp;47, «&nbsp;Contactez-nous&nbsp;» sans savoir quel guide amène la demande</p></div>
+          <div class="gx3 ay-in" style="--d:.95s"><div class="gx3-a4"><img src="img/cover-5469.jpg" alt="Couverture du guide CVAE"></div><div class="gx-tag red">Aucun contact</div><div class="gx3-n"><b>79</b>guides sur 101</div><p>Guide CVAE, aucun bouton, lien ni page contact pour joindre l'équipe</p></div>
+          <div class="gx3 after ay-in" style="--d:1.25s"><div class="gx3-a4"><img src="img/guide-ijss-contact.jpg" alt="La page Et maintenant ? ajoutée au guide IJSS"></div><div class="gx-tag ok">Après</div><div class="gx3-n"><b>14</b>guides corrigés</div><p>Guide IJSS, p.&nbsp;14, la page «&nbsp;Et maintenant&nbsp;?&nbsp;» vers la page contact RH</p></div>
         </div>
-        <div class="shf-take ay-in" style="--d:1.6s"><i data-lucide="target"></i>79 des 101 guides n'offraient aucun contact. Depuis le 27 octobre, 14 guides corrigés, dont 11 RH, avec 36 liens suivis vers la page contact du métier. Prochaine étape, 84 guides.</div>
+        <div class="shf-take ay-in" style="--d:1.6s"><i data-lucide="target"></i>Depuis le 27 octobre, 14 guides corrigés, dont 11 RH, avec 36 liens suivis vers la page contact du métier. Prochaine étape, 84 guides.</div>
       </div>
     </section>
 
     <section data-name="sinistralite.ayming.fr" class="slide airy" data-chapter="projets">
       <div class="slide-inner insights">
         <div class="slide-eyebrow">Projet · sinistralite.ayming.fr · Lancement le 27 novembre</div>
+        <h1 class="slide-title compact">Un outil sur un sous-domaine d'ayming.fr, qui amène les RH jusqu'à nos offres AT/MP</h1>
+        <div class="sx2">
+          <div class="sx2-shots">
+            <figure class="sx2-s a ay-in" style="--d:.2s"><div class="pr-bar"><span class="ay-url-dots"><i></i><i></i><i></i></span><span class="pr-url"><i data-lucide="lock"></i>sinistralite.ayming.fr</span></div><img src="img/sini-landing.jpg" alt="La page d'accueil de sinistralite.ayming.fr, l'autodiagnostic de sinistralité AT/MP"></figure>
+            <figure class="sx2-s b ay-in" style="--d:.6s"><div class="pr-bar"><span class="ay-url-dots"><i></i><i></i><i></i></span><span class="pr-url"><i data-lucide="lock"></i>sinistralite.ayming.fr/accueil</span></div><img src="img/sini-accueil.jpg" alt="L'outil, accidents du travail, maladies professionnelles et trajet, avec des liens vers ayming.fr"></figure>
+          </div>
+          <div class="sx2-l">
+            <span class="ay-row" style="--d:1.0s"><i data-lucide="globe"></i><span><b>Notre adresse, notre rythme</b>La marque Ayming, construit et mis en ligne par nos soins sans attendre les évolutions du site groupe</span></span>
+            <span class="ay-row" style="--d:1.2s"><i data-lucide="search"></i><span><b>728 pages secteur pour Google</b>des recherches « sinistralité + métier » que le site ne couvre pas aujourd'hui</span></span>
+            <span class="ay-row" style="--d:1.4s"><i data-lucide="link"></i><span><b>Des liens vers ayming.fr</b>livres blancs, offres AT/MP et page contact RH, depuis l'outil et chaque rapport</span></span>
+            <span class="ay-row" style="--d:1.6s"><i data-lucide="send"></i><span><b>Des demandes mesurées</b>l'autodiagnostic arrive dans Pardot avec sa source</span></span>
+          </div>
+        </div>
+        <p class="footnote">Google traite un sous-domaine comme un site à part&nbsp;: l'outil ne fait pas monter les chiffres d'ayming.fr, il ajoute une porte d'entrée vers nos offres.</p>
+      </div>
+    </section>
+
+    <section data-name="Pourquoi un sous-domaine" class="slide airy" data-chapter="projets">
+      <div class="slide-inner insights">
+        <div class="slide-eyebrow">Projet · sinistralite.ayming.fr · La stratégie</div>
         <h1 class="slide-title compact">Un sous-domaine pour gagner des recherches que notre site ne couvre pas</h1>
         <div class="sx3">
           <div class="sx3-l">
