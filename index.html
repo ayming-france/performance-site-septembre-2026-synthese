@@ -791,13 +791,16 @@
     .shf-r em.neg { color:var(--ay-light); }
     .shf-r em.flat { color:var(--ay-gray); font-weight:700; }
     .lost { display:grid; grid-template-columns:1.15fr 1fr; gap:22px; max-width:1080px; margin:4px auto 0; text-align:left; }
-    .lr { display:grid; grid-template-columns:200px minmax(0,1fr) 64px; gap:12px; align-items:center; padding:8px 0; border-top:1px solid var(--ay-bg-light); font-size:12.5px; color:var(--ay-gray); }
+    .lr { display:grid; grid-template-columns:190px minmax(0,1fr) 84px 60px; gap:12px; align-items:center; padding:8px 0; border-top:1px solid var(--ay-bg-light); font-size:12.5px; color:var(--ay-gray); }
     .lr b, .rcv b { display:block; font-size:15px; color:var(--ay-dark); }
     .lr i { display:block; height:12px; min-width:4px; border-radius:6px; background:var(--ay-light); }
     .lr.rse i { background:var(--kpi-down); }
     .lr em, .rcv em { font-style:normal; font-size:18px; font-weight:800; text-align:right; color:var(--ay-dark); }
-    .rcv { display:grid; grid-template-columns:minmax(0,1fr) 64px; gap:12px; align-items:center; padding:7px 0; border-top:1px solid var(--ay-bg-light); font-size:12.5px; color:var(--ay-gray); }
+    .rcv { display:grid; grid-template-columns:minmax(0,1fr) 72px 56px; gap:12px; align-items:center; padding:7px 0; border-top:1px solid var(--ay-bg-light); font-size:12.5px; color:var(--ay-gray); }
     .rcv em { color:var(--kpi-up-text); }
+    .lr.lh, .rcv.lh { padding:0 0 2px; border-top:0; }
+    .lr.lh small, .rcv.lh small { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; text-align:right; color:var(--ay-gray); }
+    .lr em + em, .rcv em + em { font-size:15px; }
     .lr.tot, .rcv.tot { border-top:2px solid var(--tint-grey-15); }
     .shf-take { display:flex; gap:10px; align-items:flex-start; max-width:980px; margin:18px auto 0; background:var(--ay-dark); color:var(--bg-white); border-radius:14px; padding:14px 20px; font-size:15.5px; line-height:1.45; text-align:left; }
     .shf-take svg { width:22px; height:22px; color:var(--blue-accent); flex:none; margin-top:1px; }
@@ -892,6 +895,10 @@
     .fl.hot { border-color:var(--ay-primary); box-shadow:0 0 0 4px rgba(17,169,230,.12); }
     .fl-a { width:36px; align-self:center; height:2px; background:var(--ay-primary); position:relative; }
     .fl-a::after { content:""; position:absolute; right:-1px; top:-4px; border-left:8px solid var(--ay-primary); border-top:5px solid transparent; border-bottom:5px solid transparent; }
+    .ai-q { display:grid; grid-template-columns:auto 1fr; gap:22px; align-items:center; max-width:900px; margin:30px auto 0; background:var(--ay-dark); color:var(--bg-white); border-radius:16px; padding:18px 26px; text-align:left; }
+    .ai-q > b { font-size:40px; font-weight:800; color:var(--ay-primary); white-space:nowrap; }
+    .ai-q p { margin:0; font-size:17px; line-height:1.4; font-style:italic; }
+    .ai-q small { display:block; margin-top:6px; font-size:12.5px; font-style:normal; opacity:.75; }
     .att { display:grid; grid-template-columns:330px 1fr; gap:24px; align-items:center; max-width:1060px; margin:22px auto 0; text-align:left; }
     .att-n { background:var(--ay-dark); color:var(--bg-white); border-radius:16px; padding:16px 20px; display:grid; grid-template-columns:auto auto auto; align-items:center; gap:10px; }
     .att-n s { color:var(--ay-light); font-size:20px; }
@@ -1072,19 +1079,20 @@
       <div class="nav-item" data-slide="17"><span class="nav-item-number">18</span>L'IA nous cite</div>
       <div class="nav-item" data-slide="18"><span class="nav-item-number">19</span>L'aperçu IA de Google</div>
       <div class="nav-item" data-slide="19"><span class="nav-item-number">20</span>Les rapports IA</div>
-      <div class="nav-item" data-slide="20"><span class="nav-item-number">21</span>ChatGPT, l'alerte d'octobre</div>
-      <div class="nav-item" data-slide="21"><span class="nav-item-number">22</span>C'était un bug</div>
-      <div class="nav-item" data-slide="22"><span class="nav-item-number">23</span>Chapitre 4 · Les projets en cours</div>
-      <div class="nav-item" data-slide="23"><span class="nav-item-number">24</span>Cinq projets</div>
-      <div class="nav-item" data-slide="24"><span class="nav-item-number">25</span>Attribution des leads</div>
-      <div class="nav-item" data-slide="25"><span class="nav-item-number">26</span>Pages contact par expertise</div>
-      <div class="nav-item" data-slide="26"><span class="nav-item-number">27</span>Guide UTM</div>
-      <div class="nav-item" data-slide="27"><span class="nav-item-number">28</span>Reporting Power BI</div>
-      <div class="nav-item" data-slide="28"><span class="nav-item-number">29</span>SEO avec WebTribe</div>
+      <div class="nav-item" data-slide="20"><span class="nav-item-number">21</span>De ChatGPT au rendez-vous</div>
+      <div class="nav-item" data-slide="21"><span class="nav-item-number">22</span>ChatGPT, l'alerte d'octobre</div>
+      <div class="nav-item" data-slide="22"><span class="nav-item-number">23</span>C'était un bug</div>
+      <div class="nav-item" data-slide="23"><span class="nav-item-number">24</span>Chapitre 4 · Les projets en cours</div>
+      <div class="nav-item" data-slide="24"><span class="nav-item-number">25</span>Cinq projets</div>
+      <div class="nav-item" data-slide="25"><span class="nav-item-number">26</span>Attribution des leads</div>
+      <div class="nav-item" data-slide="26"><span class="nav-item-number">27</span>Pages contact par expertise</div>
+      <div class="nav-item" data-slide="27"><span class="nav-item-number">28</span>Guide UTM</div>
+      <div class="nav-item" data-slide="28"><span class="nav-item-number">29</span>Reporting Power BI</div>
+      <div class="nav-item" data-slide="29"><span class="nav-item-number">30</span>SEO avec WebTribe</div>
     </div>
   </nav>
 
-  <div class="slide-counter"><span class="current">1</span>/29</div>
+  <div class="slide-counter"><span class="current">1</span>/30</div>
 
   <main class="presentation">
 
@@ -1248,29 +1256,31 @@
 
     <section data-name="Ce qu'on récupère" class="slide airy" data-chapter="seo">
       <div class="slide-inner insights">
-        <div class="slide-eyebrow">SEO · Anciennes pages, clics de septembre à novembre 2025</div>
+        <div class="slide-eyebrow">SEO · Anciennes pages, septembre à novembre 2025</div>
         <h1 class="slide-title compact">La refonte a retiré 659 anciennes pages, on redirige celles qui servent encore</h1>
         <div class="lost">
           <div class="shf-p ay-in" style="--d:.2s">
             <div class="shf-h"><i data-lucide="archive"></i>Ce que la refonte a retiré</div>
-            <div class="lr rse"><span><b>RSE et durabilité</b>27 pages, sujets que le groupe ne porte plus</span><div><i class="ay-grow" style="width:100%"></i></div><em>1&nbsp;504</em></div>
-            <div class="lr"><span><b>Articles</b>415 pages</span><div><i style="width:18%"></i></div><em>270</em></div>
-            <div class="lr"><span><b>Anciennes pages expertise</b>34 pages</span><div><i style="width:5.3%"></i></div><em>80</em></div>
-            <div class="lr"><span><b>Événements et offres d'emploi</b>183 pages</span><div><i style="width:3.2%"></i></div><em>48</em></div>
-            <div class="lr tot"><span><b>Total</b>659 pages, 186&nbsp;k affichages</span><div></div><em>1&nbsp;902</em></div>
+            <div class="lr lh"><span></span><div></div><small>Affichages</small><small>Clics</small></div>
+            <div class="lr rse"><span><b>RSE et durabilité</b>27 pages, sujets que le groupe ne porte plus</span><div><i class="ay-grow" style="width:100%"></i></div><em>30&#8239;463</em><em>1&#8239;504</em></div>
+            <div class="lr"><span><b>Articles</b>486 pages</span><div><i style="width:18%"></i></div><em>105&#8239;911</em><em>271</em></div>
+            <div class="lr"><span><b>Anciennes pages expertise</b>34 pages</span><div><i style="width:5.3%"></i></div><em>42&#8239;113</em><em>80</em></div>
+            <div class="lr"><span><b>Événements et offres d'emploi</b>112 pages</span><div><i style="width:3.1%"></i></div><em>7&#8239;587</em><em>47</em></div>
+            <div class="lr tot"><span><b>Total</b>659 pages</span><div></div><em>186&#8239;074</em><em>1&#8239;902</em></div>
           </div>
           <div class="shf-p hot ay-in" style="--d:.7s">
             <div class="shf-h"><i data-lucide="corner-up-right"></i>Redirigées vers la bonne page</div>
-            <div class="rcv"><span><b>Directive CS3D</b>vers le guide CS3D</span><em>862</em></div>
-            <div class="rcv"><span><b>CSRD et CS3D</b>vers le webinaire CS3D</span><em>107</em></div>
-            <div class="rcv"><span><b>Indice de sinistralité, 2 pages</b>vers l'article et la page AT/MP</span><em>52</em></div>
-            <div class="rcv"><span><b>CIR, 2 pages</b>vers les articles CIR d'aujourd'hui</span><em>12</em></div>
-            <div class="rcv"><span><b>C3S et taxe sur les bureaux</b>vers les guides fiscaux, elles étaient en 404</span><em>11</em></div>
-            <div class="rcv"><span><b>Financements publics et prévention</b>vers les pages offre</span><em>7</em></div>
-            <div class="rcv tot"><span><b>10 redirections</b>29&nbsp;k affichages</span><em>1&nbsp;051</em></div>
+            <div class="rcv lh"><span></span><small>Affichages</small><small>Clics</small></div>
+            <div class="rcv"><span><b>Directive CS3D</b>vers le guide CS3D</span><em>6&#8239;616</em><em>862</em></div>
+            <div class="rcv"><span><b>CSRD et CS3D</b>vers le webinaire CS3D</span><em>4&#8239;373</em><em>107</em></div>
+            <div class="rcv"><span><b>Indice de sinistralité, 2 pages</b>vers l'article et la page AT/MP</span><em>3&#8239;278</em><em>52</em></div>
+            <div class="rcv"><span><b>CIR, 2 pages</b>vers les articles CIR d'aujourd'hui</span><em>2&#8239;647</em><em>12</em></div>
+            <div class="rcv"><span><b>C3S et taxe sur les bureaux</b>vers les guides fiscaux, elles étaient en 404</span><em>6&#8239;961</em><em>11</em></div>
+            <div class="rcv"><span><b>Financements publics et prévention</b>vers les pages offre</span><em>5&#8239;284</em><em>7</em></div>
+            <div class="rcv tot"><span><b>10 redirections</b></span><em>29&#8239;159</em><em>1&#8239;051</em></div>
           </div>
         </div>
-        <p class="footnote">Clics Google des anciennes adresses de septembre à novembre 2025, avant la refonte. Elles pointaient vers l'accueil, une liste d'articles ou une erreur 404.</p>
+        <p class="footnote">Affichages et clics Google des anciennes adresses, de septembre à novembre 2025, avant la refonte. Elles pointaient vers l'accueil, une liste d'articles ou une erreur 404.</p>
       </div>
     </section>
 
@@ -1286,10 +1296,10 @@
             <div class="shf-r"><span>Clics</span><s>6&#8239;649</s><b>1&#8239;492</b><em class="neg">−78&nbsp;%</em></div>
           </div>
           <div class="shf-p hot ay-in" style="--d:.6s">
-            <div class="shf-h"><i data-lucide="briefcase"></i>Pages offre, à offre égale</div>
-            <div class="shf-r"><span>Taux de clic</span><s>0,93&nbsp;%</s><b>1,32&nbsp;%</b><em>+42&nbsp;%</em></div>
-            <div class="shf-r"><span>Clics Innovation</span><s>118</s><b>112</b><em class="flat">stable</em></div>
-            <div class="shf-r"><span>Taux de clic RH</span><s>1,05&nbsp;%</s><b>1,43&nbsp;%</b><em>+36&nbsp;%</em></div>
+            <div class="shf-h"><i data-lucide="briefcase"></i>Taux de clic des pages offre</div>
+            <div class="shf-r"><span>Ressources humaines</span><s>1,05&nbsp;%</s><b>1,43&nbsp;%</b><em>+36&nbsp;%</em></div>
+            <div class="shf-r"><span>Innovation</span><s>0,58&nbsp;%</s><b>0,96&nbsp;%</b><em>+66&nbsp;%</em></div>
+            <div class="shf-r"><span>Finance et taxes</span><s>0,99&nbsp;%</s><b>1,55&nbsp;%</b><em>+57&nbsp;%</em></div>
           </div>
         </div>
         <div class="shf-take ay-in" style="--d:1.1s"><i data-lucide="lightbulb"></i>Les articles portaient l'audience de l'ancien site, la refonte l'a coupée. Sur les offres qui existent encore, chaque affichage fait davantage cliquer.</div>
@@ -1352,7 +1362,7 @@
           <p class="chap-k ay-in" style="--d:.2s">Chapitre 3</p>
           <h1 class="ay-in" style="--d:.3s">L'IA, notre nouvelle vitrine</h1>
           <p class="chap-s ay-in" style="--d:.4s">Google et Copilot nous citent, et le faux départ de ChatGPT</p>
-          <ul><li class="ay-row" style="--d:0.50s">L'aperçu IA de Google</li><li class="ay-row" style="--d:0.62s">Les rapports de Google et de Bing</li><li class="ay-row" style="--d:0.74s">ChatGPT, l'alerte d'octobre</li><li class="ay-row" style="--d:0.86s">C'était un bug</li></ul>
+          <ul><li class="ay-row" style="--d:0.50s">L'aperçu IA de Google</li><li class="ay-row" style="--d:0.62s">Les rapports de Google et de Bing</li><li class="ay-row" style="--d:0.74s">De ChatGPT au rendez-vous</li><li class="ay-row" style="--d:0.86s">ChatGPT, l'alerte d'octobre</li><li class="ay-row" style="--d:0.98s">C'était un bug</li></ul>
         </div>
       </div>
     </section>
@@ -1399,6 +1409,25 @@
           <figure class="rep-s ay-in" style="--d:.5s"><figcaption><img src="https://www.google.com/s2/favicons?domain=bing.com&sz=64" alt="">Bing · AI Performance, Copilot</figcaption><img src="img/bing-copilot-citations.png" alt="Bing Webmaster Tools, citations par Copilot de juillet à octobre 2026"><div class="rep-b ay-pop" style="--d:1.3s"><b>7&#8239;500</b>citations par Copilot depuis juillet</div></figure>
         </div>
         <p class="footnote">89 visites venaient d'un assistant IA en septembre. Être cité, c'est déjà être vu, le clic reste à gagner.</p>
+      </div>
+    </section>
+
+    <section data-name="De ChatGPT au rendez-vous" class="slide airy" data-chapter="ia">
+      <div class="slide-inner insights">
+        <div class="slide-eyebrow">L'IA en action · Une demande IP Box</div>
+        <h1 class="slide-title compact">ChatGPT nous recommande, le prospect prend rendez-vous en moins de 72 heures</h1>
+        <div class="flow">
+          <div class="fl ay-in" style="--d:.2s"><i data-lucide="sparkles"></i><b>ChatGPT</b><span>« Quels cabinets pour l'IP Box&nbsp;? » Ayming est dans le classement</span></div>
+          <div class="fl-a ay-fade" style="--d:.5s"></div>
+          <div class="fl ay-in" style="--d:.6s"><i data-lucide="file-text"></i><b>La page IP Box</b><span>suggérée par ChatGPT, sur ayming.fr</span></div>
+          <div class="fl-a ay-fade" style="--d:.9s"></div>
+          <div class="fl ay-in" style="--d:1.0s"><i data-lucide="calendar-check"></i><b>Calendly</b><span>rendez-vous pris depuis la page</span></div>
+          <div class="fl-a ay-fade" style="--d:1.3s"></div>
+          <div class="fl ay-in" style="--d:1.4s"><i data-lucide="phone"></i><b>Le rappel</b><span>besoin préqualifié par l'équipe</span></div>
+          <div class="fl-a ay-fade" style="--d:1.7s"></div>
+          <div class="fl hot ay-in" style="--d:1.8s"><i data-lucide="handshake"></i><b>Proposition</b><span>commerciale IP Box en cours</span></div>
+        </div>
+        <div class="ai-q ay-in" style="--d:2.3s"><b>&lt;&nbsp;72&nbsp;h</b><p>« Une belle boucle vertueuse comme on les aime&nbsp;: visibilité LLM, site web, prise de contact et opportunité commerciale&nbsp;! »<small>Karima, à l'équipe</small></p></div>
       </div>
     </section>
 
